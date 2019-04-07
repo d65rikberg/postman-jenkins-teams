@@ -1,0 +1,15 @@
+{
+  "name": "postman-jenkins-teams",
+  "version": "1.0.0",
+  "description": "Project Postman Tests",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "postman-tests": "newman run tests/jenkins-demo.postman_collection.json -e tests/OpenWetherMapDemo.postman_environment.json --disable-unicode --reporters cli,junit --reporter-junit-export OpenWethearMap_Demo.xml"
+  },
+  "author": "Dmitriy Rikberg",
+  "dependencies": {
+    "newman": "^4.4.1"
+  }
+}
